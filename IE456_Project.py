@@ -52,7 +52,7 @@ end_time = timer()
 print('Duration: {}'.format(end_time - start_time))
 
 # Output to txt file
-f = open("outputs" + file_names[1], "w+")
+f = open("outputs/" + file_names[1], "w+")
 n = str(n)
 f.write(n)
 f.write('\n')

@@ -11,7 +11,7 @@ for i in range(0, number_of_vertices):
 lst = randomlist.copy()
 success = is_Graphical(randomlist)
 if not success:
-    print("Random list is not graphical. Try again.")
+    print("Error: Random list is not graphical. Try again.")
 else:
     print("Successfully generated input.")
     file_name = "inputs/I-70-1.txt"

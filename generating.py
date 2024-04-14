@@ -14,7 +14,7 @@ if not success:
     print("Random list is not graphical. Try again.")
 else:
     print("Successfully generated input.")
-    file_name = "I-70-1.txt"
+    file_name = "inputs/I-70-1.txt"
     # Output to txt file
     f = open(file_name, "w+")
     v = str(number_of_vertices)

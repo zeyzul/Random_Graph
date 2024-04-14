@@ -12,7 +12,7 @@ file_names = input()  # Reads input and output file names from the user in that 
 file_names = list(file_names.split(" "))
 
 # Read input from files to a list called lines. line[0] is the number of vertices and line[1] is the degree sequence
-with open(file_names[0]) as f:
+with open("inputs/" + file_names[0]) as f:
     lines = f.readlines()
     lines[0] = lines[0].replace('\n', '')  # remove the backspace character from the first line
 

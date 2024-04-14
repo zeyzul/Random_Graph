@@ -75,7 +75,7 @@ draw_graph = True
 if draw_graph:
     # Drawing the graph
     fig, ax = plt.subplots()
-    fig = plt.figure(1, figsize=(1, 1), dpi=800)
+    fig = plt.figure(1, figsize=(1, 1), dpi=1200)
     d = dict(Graph.degree)
     nx.draw(Graph, with_labels=False, font_weight='normal', font_size=5,
             node_color=range(int(file_names[0].split("-")[1])), node_size=[v * 5 for v in d.values()], width=0.3,
@@ -83,7 +83,7 @@ if draw_graph:
     ax.set_facecolor("#ffffff")
     ax.axis('off')
     fig.set_facecolor('#ffffff')
-    plt.savefig('fig_HH.pdf')
+    plt.savefig("fig_" + file_names[1][-6:-4] + ".png" )
 
 
 
